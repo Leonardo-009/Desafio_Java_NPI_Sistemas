@@ -1,0 +1,24 @@
+<div class="col-md-6 offset-md-3">
+  <h3 style="text-align: center;">Create Socio</h3>
+  <form (ngSubmit)="onSubmit()" style="margin-top: 20px;">
+    <div class="form-group">
+      <label for="nome">Nome</label>
+      <input type="text" class="form-control" id="nome" [(ngModel)]="socio.nome" name="nome" required minlength="5" maxlength="50">
+    </div>
+
+    <div class="form-group">
+      <label for="renda">Renda</label>
+      <input type="number" class="form-control" id="renda" [(ngModel)]="socio.renda" name="renda" required min="0">
+    </div>
+
+    <div class="form-group">
+      <label for="ativo">Ativo</label>
+      <select class="form-control" id="ativo" [(ngModel)]="socio.ativo" name="ativo" required>
+        <option [value]="true">Sim</option>
+        <option [value]="false">Não</option>
+      </select>
+    </div>
+
+    <button class="btn btn-success" type="submit" style="margin-top: 10px;">Enviar</button>
+  </form>
+</div>
