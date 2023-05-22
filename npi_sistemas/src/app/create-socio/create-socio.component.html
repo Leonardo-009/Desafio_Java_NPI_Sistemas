@@ -1,6 +1,6 @@
 <div class="col-md-6 offset-md-3">
-  <h3 style="text-align: center;">Create Socio</h3>
-  <form (ngSubmit)="onSubmit()" style="margin-top: 20px;">
+  <h3>Criação dos Sócio</h3>
+  <form (ngSubmit)="onSubmit()">
     <div class="form-group">
       <label for="nome">Nome</label>
       <input type="text" class="form-control" id="nome" [(ngModel)]="socio.nome" name="nome" required minlength="5" maxlength="50">
@@ -19,6 +19,6 @@
       </select>
     </div>
 
-    <button class="btn btn-success" type="submit" style="margin-top: 10px;">Enviar</button>
+    <button class="btn btn-success" type="submit">Salvar</button>
   </form>
 </div>

@@ -1,0 +1,67 @@
+  /* Estilo da tabela */
+  table {
+    width: 100%; /* Largura da tabela */
+    border-collapse: collapse; /* Colapso das bordas da tabela */
+  }
+
+  th,
+  td {
+    padding: 12px; /* Espaçamento interno das células */
+    text-align: center; /* Alinhamento do texto no centro */
+  }
+
+  th {
+    background-color: #3b5998; /* Cor de fundo do cabeçalho */
+    color: #fff; /* Cor do texto do cabeçalho */
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2; /* Cor de fundo das linhas pares */
+  }
+
+  /* Estilo das ações */
+  .btn {
+    padding: 6px 12px; /* Espaçamento interno dos botões */
+    border-radius: 4px; /* Arredondamento das bordas dos botões */
+  }
+
+  .btn-primary {
+    background-color: #3b5998; /* Cor de fundo do botão primário */
+    border-color: #3b5998; /* Cor da borda do botão primário */
+    color: #fff; /* Cor do texto do botão primário */
+  }
+
+  .btn-primary:hover {
+    background-color: #2d4373;
+    border-color: #2d4373;
+  }
+
+  .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: #fff;
+  }
+
+  .btn-danger:hover {
+    background-color: #c82333;
+    border-color: #c82333;
+  }
+
+  .btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    color: #fff;
+  }
+
+  .btn-info:hover {
+    background-color: #138496;
+    border-color: #138496;
+  }
+
+  .text-success {
+    color: #28a745;
+  }
+
+  .text-danger {
+    color: #dc3545;
+  }

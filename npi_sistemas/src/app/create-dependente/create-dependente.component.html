@@ -1,15 +1,18 @@
-<div class="col-md-6 offset-md-3">
-  <h3 style="text-align: center; margin-bottom: 20px;">Create Dependente</h3>
-  <form (ngSubmit)="onSubmit()" style="background-color: #f2f2f2; padding: 20px; border-radius: 5px;">
-    <div class="form-group">
-      <label for="nome">Nome:</label>
-      <input type="text" class="form-control" id="nome" [(ngModel)]="dependente.nome" name="nome" required minlength="5" maxlength="50">
-    </div>
+<div class="container">
+  <div class="form-wrapper">
+    <h3 class="form-title">Cadastro dos Dependentes</h3>
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" class="form-control" id="nome" [(ngModel)]="dependente.nome" name="nome" required minlength="5" maxlength="50">
+      </div>
 
-    <div class="form-group">
-      <label for="idade">idade:</label>
-      <input type="number" class="form-control" id="idade" [(ngModel)]="dependente.idade" name="idade" required min="0">
-    </div>
-    <button class="btn btn-success" type="submit" style="margin-top: 10px;">Enviar</button>
-  </form>
+      <div class="form-group">
+        <label for="idade">Idade:</label>
+        <input type="number" class="form-control" id="idade" [(ngModel)]="dependente.idade" name="idade" required min="0">
+      </div>
+
+      <button class="submit-button" type="submit">Salvar</button>
+    </form>
+  </div>
 </div>

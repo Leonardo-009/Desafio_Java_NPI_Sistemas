@@ -30,7 +30,7 @@ import { DependenteDetalisComponent } from './dependente-detalis/dependente-deta
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
